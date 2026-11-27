@@ -134,6 +134,7 @@ Owners, decoded rather than matched by a scan: script operands from `tools/vmwal
 | `0x44F4B8-0x450016` | card and skill names | `0x450018` |
 | `0x45A602-0x45B002` | menu labels (includes `わざダミー` placeholders) | `0x45AADC`, `0x7F7604`+ |
 | `0x45BBCE-0x466CF0` | system and NPC dialogue, including Soul Doll instructions | `0x467BD0`+ |
+| `0x466CF0-0x466D9A` | doll visit menu labels (`●わざのしゅうとく`...), **no terminators**: drawn by the record's tile count; in `menus.json` via `extract.COUNTED` (issue #1) | `0x466DB0`-`0x466E10` (pointer, x, y, tiles), `0x0C02F4`, `0x0C24F0` |
 | `0x47BD3C-0x47BF5E` | link cable messages | `0x47BFA0`, code |
 
 About 124k words of referenced text in total. Non-text that decodes as text: `0x1EAC0A`-`0x1EC9E0` and `0x76E49A` (guess: coordinate data, from the number patterns), short noise across the graphics region: exclude them. `0x7F0000+` holds tables.

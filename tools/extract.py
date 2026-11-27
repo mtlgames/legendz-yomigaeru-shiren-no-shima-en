@@ -34,6 +34,12 @@ MID_OK = {0x188074, 0x2AB4E4, 0x2ABE30, 0x434BFC, 0x45AE30, 0x45BBD0, 0x45BDF0, 
 DATA_RUNS = [(0x45A606, 0x45A696), (0x45AABC, 0x45AE30), (0x47BF20, 0x47BF5E)]
 CREDITS = (0x46F75C, 0x46FF53)  # through its FF
 CREDITS_OWNERS = ["lit:0D205C"]
+# Doll visit menu labels past system's end, drawn by a count with no terminator (issue #1): id, end, owners. 466D42 (●オートぼうけん) has no pointer.
+COUNTED = [(0x466CF0, 0x466D02, ["tab:466DB0"]), (0x466CF2, 0x466D02, ["lit:0C02F4"]), (0x466D02, 0x466D10, ["tab:466DD0"]),
+           (0x466D04, 0x466D10, ["lit:0C24F0"]), (0x466D10, 0x466D1E, ["tab:466DB8", "tab:466DD8"]),
+           (0x466D1E, 0x466D30, ["tab:466DC0", "tab:466DE0"]), (0x466D30, 0x466D42, ["tab:466DC8", "tab:466DE8"]),
+           (0x466D52, 0x466D64, ["tab:466DF0"]), (0x466D64, 0x466D76, ["tab:466DF8"]), (0x466D76, 0x466D88, ["tab:466E00"]),
+           (0x466D88, 0x466D9A, ["tab:466E08"])]
 SPEAKERS, SPEAKERS2, TAGS, LEGENDZ = 0x184DF6, 0x184F34, 0x7F020C, 0x2B0AE0
 
 
@@ -161,6 +167,8 @@ def entries(rom):
         blocks[name].append(e)
         for o in range(t, end, 2):
             claimed[o] = t
+    for t, end, own in COUNTED:
+        blocks["menus"].append({"id": "%06X" % t, "end": "%06X" % end, "owners": own, "jp": jpcodec.decode(rom[t:end]), "en": "", "status": "", "notes": ""})
     # what's left in each block: padding, dead strings, data runs
     rest = []
     for name, a, b in BLOCKS:

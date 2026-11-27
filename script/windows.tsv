@@ -5928,3 +5928,14 @@ id	px	rows	source	where
 466C66	156	2	class	dialogue box
 466C9E	156	2	class	dialogue box
 466CD0	156	2	class	dialogue box
+466CF0	72	1	guess	doll visit menu, table 0x466DB0: tiles 18 (issue #1)
+466CF2	64	1	guess	title w=8, 0x0C02A4
+466D02	56	1	guess	doll visit menu, table 0x466DD0: tiles 14
+466D04	48	1	guess	title w=6, 0x0C24A0
+466D10	56	1	guess	doll visit menu: tiles 14
+466D1E	72	1	guess	doll visit menu: tiles 18
+466D30	72	1	guess	doll visit menu: tiles 18
+466D52	72	1	guess	doll record menu, table 0x466DF0: tiles 18
+466D64	72	1	guess	doll record menu: tiles 18
+466D76	72	1	guess	doll record menu: tiles 18
+466D88	72	1	guess	doll record menu: tiles 18

@@ -1025,5 +1025,129 @@
   "en": "All Status<end>",
   "status": "tl",
   "notes": ""
+ },
+ {
+  "id": "466CF0",
+  "end": "466D02",
+  "owners": [
+   "tab:466DB0"
+  ],
+  "jp": "●わざのしゅうとく",
+  "en": "●Learn Skill<end>",
+  "status": "tl",
+  "notes": "doll visit menu (issue #1): 466CF0-466D9A drawn by count, no terminator, past system's range"
+ },
+ {
+  "id": "466CF2",
+  "end": "466D02",
+  "owners": [
+   "lit:0C02F4"
+  ],
+  "jp": "わざのしゅうとく",
+  "en": "Learn Skill<end>",
+  "status": "tl",
+  "notes": "title, w=8 (0x0C02A4)"
+ },
+ {
+  "id": "466D02",
+  "end": "466D10",
+  "owners": [
+   "tab:466DD0"
+  ],
+  "jp": "●わざのコピー",
+  "en": "●Copy Skill<end>",
+  "status": "tl",
+  "notes": ""
+ },
+ {
+  "id": "466D04",
+  "end": "466D10",
+  "owners": [
+   "lit:0C24F0"
+  ],
+  "jp": "わざのコピー",
+  "en": "Copy Skill<end>",
+  "status": "tl",
+  "notes": "title, w=6 (0x0C24A0)"
+ },
+ {
+  "id": "466D10",
+  "end": "466D1E",
+  "owners": [
+   "tab:466DB8",
+   "tab:466DD8"
+  ],
+  "jp": "●きろくをみる",
+  "en": "●Records<end>",
+  "status": "tl",
+  "notes": ""
+ },
+ {
+  "id": "466D1E",
+  "end": "466D30",
+  "owners": [
+   "tab:466DC0",
+   "tab:466DE0"
+  ],
+  "jp": "●アイテムもたせる",
+  "en": "●Give Item<end>",
+  "status": "tl",
+  "notes": ""
+ },
+ {
+  "id": "466D30",
+  "end": "466D42",
+  "owners": [
+   "tab:466DC8",
+   "tab:466DE8"
+  ],
+  "jp": "●メッセージをかく",
+  "en": "●Write Message<end>",
+  "status": "tl",
+  "notes": ""
+ },
+ {
+  "id": "466D52",
+  "end": "466D64",
+  "owners": [
+   "tab:466DF0"
+  ],
+  "jp": "●のうりょくをみる",
+  "en": "●View Stats<end>",
+  "status": "tl",
+  "notes": ""
+ },
+ {
+  "id": "466D64",
+  "end": "466D76",
+  "owners": [
+   "tab:466DF8"
+  ],
+  "jp": "●たたかいのきろく",
+  "en": "●Battle Record<end>",
+  "status": "tl",
+  "notes": ""
+ },
+ {
+  "id": "466D76",
+  "end": "466D88",
+  "owners": [
+   "tab:466E00"
+  ],
+  "jp": "●ぼうけんのきろく",
+  "en": "●Quest Record<end>",
+  "status": "tl",
+  "notes": ""
+ },
+ {
+  "id": "466D88",
+  "end": "466D9A",
+  "owners": [
+   "tab:466E08"
+  ],
+  "jp": "●ほうもんのきろく",
+  "en": "●Visit Record<end>",
+  "status": "tl",
+  "notes": ""
  }
 ]
